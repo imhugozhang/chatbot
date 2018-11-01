@@ -289,20 +289,20 @@ new_dir = os.path.join(dir, 'logs')
 if not os.path.exists(new_dir):
     os.makedirs(new_dir)
 
-# # train
-# print('Training...')
-# callbacks = [
-#     callbacks.ModelCheckpoint(filepath=filepath, verbose=1,
-#                               monitor='val_loss', save_best_only=True),
-#     # Check out the train history later with Tensorboard
-#     callbacks.TensorBoard(log_dir=log_dir),
-#     callbacks.EarlyStopping(patience=20)]
+# train
+print('Training...')
+callbacks = [
+    callbacks.ModelCheckpoint(filepath=filepath, verbose=1,
+                              monitor='val_loss', save_best_only=True),
+    # Check out the train history later with Tensorboard
+    callbacks.TensorBoard(log_dir=log_dir),
+    callbacks.EarlyStopping(patience=20)]
 
-# model.fit([inputs_train, queries_train], answers_train,
-#           batch_size=batch_size,
-#           epochs=epochs,
-#           validation_split=0.1,
-#           callbacks=callbacks)
+model.fit([inputs_train, queries_train], answers_train,
+          batch_size=batch_size,
+          epochs=epochs,
+          validation_split=0.1,
+          callbacks=callbacks)
 
 # del model
 # model = load_model(filepath=filepath)
