@@ -5,8 +5,7 @@ The highest correct rate during testing is 98% for single_supporting_fact_10k an
 
 Configure challenge type by commenting and uncommenting challenge_type.
 
-Run pip install -r requirements.txt or pip3 install -r requirements.txt
-#to install dependencies.
+Run pip install -r requirements.txt or pip3 install -r requirements.txt to install dependencies.
 
 Use dir = os.getcwd() on Jupyter Notebook or dir = os.path.dirname(__file__) on Command Line local runtime.
 
