@@ -1,6 +1,8 @@
 # chatbot
 A chatbot which understands stories and answers questions based on stories using Tensorflow.
 
+Run chatbot.py.
+
 The highest correct rate during testing is 98% for single_supporting_fact_10k and 55% for two_supporting_facts_10k.
 
 Configure challenge type by commenting and uncommenting challenge_type.
