@@ -1,7 +1,7 @@
 # chatbot
-A chatbot which understands stories and answers questions based on stories using Tensorflow.
+A chatbot which understands stories and answers questions based on stories using TensorFlow.
 
-Comment out the #train section if you want to use the pre-trained weight.
+Comment out the #train section if you want to use the pre-trained weights.
 
 Run chatbot.py.
 
@@ -13,9 +13,9 @@ Run pip install -r requirements.txt or pip3 install -r requirements.txt to insta
 
 Use dir = os.getcwd() on Jupyter Notebook or dir = os.path.dirname(__file__) on Command Line local runtime.
 
-Used single layer LSTM on single_supporting_fact questions, and two layers LSTM on two_supporting_facts questions.
+Uses a single-layer LSTM for single_supporting_fact questions and a two-layer LSTM for two_supporting_facts questions.
 
-The optimal amount of epoch for single_supporting_fact questions is 120 and for two_supporting_facts questions is 40 during testing.
+The optimal number of epochs for single_supporting_fact questions is 120 and for two_supporting_facts questions is 40 during testing.
 
 Add more dropout layers or increase dropout rate if training for more epochs.
 
